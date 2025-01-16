@@ -16,7 +16,7 @@ List(s) of files to move or delete can be created from either of CSV reports.
 
 Directories with name '$RECYCLE.BIN' are ignored. Linux sees some MS Windows directories as executable only, a user or app can go into them but can't read them. If the Windows "executable only" directory is user accessible, it be easily corrected by respondiong to "You don't currently have permission to access this folder".  If the directory is not user accessible then its probably a system directory that is not worth checking for dulicate files.  
 
-__Foreign Language Characters:__ If MS Excel is the default application for CVS files, MS Excel will not display foreign language characters corrently.  
+__Foreign Language Characters:__ If MS Excel is the default application for CVS files, MS Excel will not display foreign language characters correctly.  
 
 FIX: Change the default app for CSV to Notepad or Wordpad and manually __import__ into excel, alternatively rename *.csv file to a *.txt and manually import into MS Excel. Do not attempt to use __Open with__ and select Excel, it always has to be an __Import__.   
   
