@@ -42,14 +42,14 @@ Setting maximum file size is optional, default is 20 GiB.  Ignoring large files 
 
 **-g or -G** gigabytes (GiB)
     
-### Notes
+_Additional Notes_
 * Output directory is created in the directory from which the script is run.
 * Temporary files are created in the directory from which the script is run - all removed or moved on scipt termination
 * The 'filter' and 'source directory' require single or double quotes for spaces in the filter and directory input.
 * If filtered by 'rar' that will pick both the word 'LIBRARY' and suffix '.rar'
 * Full file names can be used, but it only reports on contents using checksum.  
 * Only the first instances of -f used, the rest ignored.
-* The script is designed to be thorough, not designed for speed.
+* The app is designed to be thorough, not designed for speed.
 * Windows file systems occasionally produce some odd stuff that cannot be processed when mounted on Linux.
 
 ### OUTPUTS 
