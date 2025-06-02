@@ -1,4 +1,5 @@
-## duplicateFF   Duplicate File Finder
+## duplicateFF    
+## Duplicate File Finder
 ### A small Linux app that will search supplied directory(s) and compare files using sha256 checksum and produces reports on duplicate and unique files.      
 
 *duplicateFF* created from the bash script [Duplicate_FF](https://github.com/Jim-JMCD/Duplicate-File-Finder) (private Github repository) using shc. 
