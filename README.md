@@ -81,7 +81,18 @@ A CSV list of all files processed __../all_files_yymmdd-hhmm.csv__   ...... Form
 
 A CSV list of all unique files  __../unique_files_yymmdd-hhmm.csv__  ... Format: check_sum,\"\<full path\>\/\<file name\>\"
 
+If unique files is missing then there are no unique files.
+
 Basic logging __../log__yymmdd-hhmm.txt__  
+
+### BUGS ###
+In -h option (help) it gives
+
+"-s Source directory, one or more directories can be checked, each must start with -d"
+
+That should be 
+
+"-s Source directory, one or more directories can be checked, each must start with -s"
    
 
 
