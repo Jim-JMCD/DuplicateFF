@@ -26,14 +26,14 @@ ________________________________________________________________________________
 ### Usage 
 duplicateFF -f 'filter' -d 'source directory' 
 
-**_duplicateFF -f '.mp4' -m 300 -d './video/' -d '/home/fred/down loads' -o /tmp_** ..... Check all mp4 files that are smaller 300MB in Fred's down loads directory and ./video. Output will be placed in /tmp.   
+**_duplicateFF -f '.mp4' -m 300 -s './video/' -s '/home/fred/down loads' -o /tmp_** ..... Check all mp4 files that are smaller 300MB in Fred's down loads directory and ./video. Output will be placed in /tmp.   
 
 Inputs of 'filter' 'source directory' 'output directory' should have single or double quotes otherwise any names with white space will not be processed.
 
 
 **-f** Optional case insensitive filter, filter the list files by part or the whole name of a file. 
 
-**-d** One or many directories can be entered each must start with -d.  
+**-s** One or many directories can be entered each must start with -s.  
 
 Setting maximum file size is optional, default is 20 GiB.  Ignoring large files can save time.
 
