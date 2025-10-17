@@ -7,6 +7,8 @@ Run **_duplicateFF_** first to generate the **_duplicate_files1_yymmdd-hhmm.csv_
 ### *THE QUICK METHOD* ###
 DO NOT USE THIS METHOD if you rely upon directory and files names to provide identification and provide context. Useful for image files and other files with generic names with file easily identified by contents. 
 
+The provided scripts for this method have minimal inout checking, wise to check everything before moving or deleting anuything.  
+
 This method moves one file of a duplicate set to a user defined directory then that is followed by deleting all the duplicate copies that were not moved. 
 
 Step 1.  This will move files to designated directory.  
