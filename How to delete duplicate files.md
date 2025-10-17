@@ -1,11 +1,11 @@
-## How to delete duplicate files.   -- under construction  
+## How to delete duplicate files.
 
 ### Before deleting or moving any file make sure you have a guaranteed backup.
 
 Run **_duplicateFF_** first to generate the **_duplicate_files1_yymmdd-hhmm.csv_** and **_duplicate_files2_yymmdd-hhmm.csv_** files
 
 ### *THE QUICK METHOD* ###
-DO NOT USE THIS METHOD if you rely upon directory and files names to provide identification and provide context. Useful for image files and other files with generic names where can be file easily identified by contents. 
+DO NOT USE THIS METHOD if you rely upon directory and files names to provide identification and provide context. Useful for image files and other files with generic names where they can be file easily identified by contents. 
 
 The provided scripts for this method have minimal inout checking, wise to check everything before moving or deleting anuything.  
 
