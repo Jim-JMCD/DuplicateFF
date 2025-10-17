@@ -30,15 +30,19 @@ To remove unwanted duplicates create a list of files to be removed. Run the comm
 
 From the the file **_files_to_remove_** delete any lines that has a reference to files that you want to keep.  When finished removing lines of files that you want to keep run the command 
 
-**_bash files_to_remove_**  that will delete all unwanteed files. 
+**_bash files_to_remove_**    
+
+.....that will delete all unwanteed files. 
 
 OR
 
 Move unwanted duplicates by create a list of files to be moved. Run the command
 
-**_awk -F "," '{ printf "mv %s /some/destination/directory \n",$2}' duplicate_files1_yymmdd-hhmm.csv > files_to_move_**
+**_awk -F "," '{ printf "mv %s /some/destination/directory/ \n",$2}' duplicate_files1_yymmdd-hhmm.csv > files_to_move_**
 
 From the the file **_files_to_move_** delete any lines that has a reference to files that you want to keep.  When finished removing lines of files that you want to keep run the command 
 
-**_bash files_to_move_**  that will move all unwanteed files to /some/destination/directory    
+**_bash files_to_move_**  
+
+.....that will move all unwanteed files to /some/destination/directory    
 
