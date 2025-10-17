@@ -1,0 +1,29 @@
+#!/usr/bin/bash
+# $1 The input list is a duplicate_files1_* file (Note it is _files1_ )   
+if [ "$#" -ne 1 ]; then
+    echo "Please provide input_list "
+    exit 1
+fi
+in_list=$1
+awk -F ',' '{ print $2}' $in_list | grep -v "File"
+echo
+echo "  If files are ok.............."
+while true; do
+     read -p "   Do you want to DELETE everything on the list (y/n) " answer
+     case $answer in
+       y|Y) break;;
+       n|N) echo "Bye"; exit;;
+        * ) echo "Require y or n" ;;
+     esac
+done
+while true; do
+     read -p "   Do you want to DELETE everything on the list (y/n) " answer
+     case $answer in
+       y|Y) break;;
+       n|N) echo "Bye"; exit;;
+        * ) echo "Require y or n" ;;
+     esac
+done
+echo " Deleting files ...... "
+awk -F ',' '{ print $2}' $in_list | grep -v "File"| xargs rm -f
+# all done
