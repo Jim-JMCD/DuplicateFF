@@ -1,0 +1,40 @@
+#!/usr/bin/bash
+# $1 is the inputlist duplicate_files2_* (Note it _files2_)
+# $2 is the destination directory
+# This script moves all the files listed in the third column of $1 CSV file to $2 the destination directory.
+
+if [ "$#" -ne 2 ]; then
+    echo "Please provide input_list and output_directory in that order "
+    exit 1
+fi
+in_list=$1
+out_dir=$2
+awk -F ',' '{ print $3}' $in_list | grepv "File"
+echo
+echo "  Output directory : $out_dir"
+echo
+echo "  If files and output directory are ok"
+while true; do
+     read -p "     Do you want to proceed?    (y/n) " answer
+     case $answer in
+       y|Y) break;;
+       n|N) echo "Bye"; exit;;
+        * ) echo "Require y or n" ;;
+     esac
+done
+while true; do
+     read -p "     Proceed with moving files? (y/n) " answer
+     case $answer in
+       y|Y) break;;
+       n|N) echo "Bye"; exit;;
+        * ) echo "Require y or n" ;;
+     esac
+done
+mkdir $out_dir 2>=1 /dev/null # no problems if already exists
+if [ ! -d "$out_dir" ]; then
+  echo "$out_dir directory does not exist, creation failed"
+  exit
+fi
+echo "Moving files, may take a while"
+awk -F ',' '{ print $3}' $in_list | grep -v "File"| xargs -I '{}' mv '{}' $out_dir
+# all done
