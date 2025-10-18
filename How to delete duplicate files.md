@@ -38,7 +38,7 @@ From the the file **_files_to_remove_** delete any lines that has a reference to
 bash files_to_remove
 ~~~
 
-.....that will delete all unwanteed files. 
+.....that will delete all unwanted files. 
 
 OR
 
@@ -51,5 +51,5 @@ From the the file **_files_to_move_** delete any lines that has a reference to f
 bash files_to_move
 ~~~  
 
-.....that will move all unwanteed files to /some/destination/directory    
+.....that will move all unwanted files to /some/destination/directory    
 
