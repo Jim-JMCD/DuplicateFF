@@ -11,7 +11,9 @@ This requires a bash environment to run.
 An exceutable created from the *shc* utility always requires bash. More : [Github shc](https://github.com/neurobin/shc)   
                                                                               
 ### Notes
-Created on MS Windows WSL-Ubuntu, tested with MSYS2 and Gitbash shells.  It should work on Cygwin (MSYS2 and Gitbash are Cygwin derivates) and other Linux.                                                     
+Created on MS Windows WSL-Ubuntu, tested with MSYS2 and Gitbash shells.  It should work on Cygwin (MSYS2 and Gitbash are Cygwin derivates) and other Linux. 
+
+To remove duplicate files there are some suggestions in [How to delete duplicate files](https://github.com/Jim-JMCD/DuplicateFF/blob/main/How%20to%20delete%20duplicate%20files.md) using the **_duplicateFF_KeepCopy_** and **_duplicateFF_RemoveALL_** scripts in this repository.
 
 It requires a least one directory to search many directories can be compared.  Files names and maximum file sizes can be used as filters to narrow searches and save time. Reports are CSV format which can be imported into a spreadsheet. 
 
