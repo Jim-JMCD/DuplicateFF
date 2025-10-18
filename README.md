@@ -13,11 +13,9 @@ An exceutable created from the *shc* utility always requires bash. More : [Githu
 ### Notes
 Created on MS Windows WSL-Ubuntu, tested with MSYS2 and Gitbash shells.  It should work on Cygwin (MSYS2 and Gitbash are Cygwin derivates) and other Linux. 
 
-To remove duplicate files there are some suggestions in [How to delete duplicate files](https://github.com/Jim-JMCD/DuplicateFF/blob/main/How%20to%20delete%20duplicate%20files.md) using the **_duplicateFF_KeepCopy_** and **_duplicateFF_RemoveALL_** scripts in this repository.
+To move or remove duplicate files there are some suggestions in [How to delete duplicate files](https://github.com/Jim-JMCD/DuplicateFF/blob/main/How%20to%20delete%20duplicate%20files.md) using the **_duplicateFF_KeepCopy_** and **_duplicateFF_RemoveALL_** scripts in this repository.
 
 It requires a least one directory to search many directories can be compared.  Files names and maximum file sizes can be used as filters to narrow searches and save time. Reports are CSV format which can be imported into a spreadsheet. 
-
-List(s) of files to move or delete can be created from either of CSV reports. 
 
 Directories with name '$RECYCLE.BIN' are ignored. Linux sees some MS Windows directories as executable only, a user or app can go into them but can't read them. If the Windows "executable only" directory is user accessible, it be easily corrected by respondiong to "You don't currently have permission to access this folder".  If the directory is not user accessible then its probably a system directory that is not worth checking for dulicate files.  
 
