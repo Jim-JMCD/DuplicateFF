@@ -11,7 +11,7 @@ This requires a bash environment to run.
 An exceutable created from the *shc* utility always requires bash. More : [Github shc](https://github.com/neurobin/shc)   
                                                                               
 ### Notes
-Created on MS Windows WSL-Ubuntu, tested with MSYS2 and Gitbash shells.  It should work on Cygwin (MSYS2 and Gitbash are Cygwin derivates) and other Linux. 
+Tested with MSYS2 and Gitbash shells.  It should work on Cygwin (MSYS2 and Gitbash are Cygwin derivates). 
 
 To move or remove duplicate files there are some suggestions in [How to delete duplicate files](https://github.com/Jim-JMCD/DuplicateFF/blob/main/How%20to%20delete%20duplicate%20files.md) using the **_duplicateFF_KeepCopy_** and **_duplicateFF_RemoveALL_** scripts in this repository.
 
@@ -54,8 +54,10 @@ _Additional Notes_
 * Windows file systems occasionally produce some odd stuff that cannot be processed when mounted on Linux.
 
 ### OUTPUTS 
- 
-__../duplicate_files1_yymmdd-hhmm.csv__  Format – One file per row
+
+#### Outputs assume there is at least one minute between each run of duplicateFF
+
+__../duplicate_FILES1_yymmdd-hhmm.csv__  Format – One file per row
 
 CSV Columns 
 1. sha256 checksum
@@ -64,7 +66,7 @@ CSV Columns
 4. file size in KiB
 ------------------------------------
 
-__../duplicate_files2_yymmdd-hhmm.csv__  Format – Every row is as unique sha256 value with file size and all files of the same shar256 value. If more files match the checksum they are added as columns in <file> <directory> pairs i.e. repeats of columns 5 and 6.  
+__../duplicate_FILES2_yymmdd-hhmm.csv__  Format – Every row is as unique sha256 value with file size and all files of the same shar256 value. If more files match the checksum they are added as columns in <file> <directory> pairs i.e. repeats of columns 5 and 6.  
 
 CSV Columns
 1. sha256 checksum
@@ -83,14 +85,7 @@ If unique files is missing then there are no unique files.
 
 Basic logging __../log__yymmdd-hhmm.txt__  
 
-### BUGS ###
-In -h option (help) it gives
 
-"-s Source directory, one or more directories can be checked, each must start with -d"
-
-That should be 
-
-"-s Source directory, one or more directories can be checked, each must start with -s"
    
 
 
