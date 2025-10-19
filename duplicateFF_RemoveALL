@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-# $1 The input list is a duplicate_files1_* file (Note it is _files1_ )   
+# $1 The input list is a duplicate_FILES1_* file (Note it must be _FILES1_ )   
 if [ "$#" -ne 1 ]; then
     echo "Please provide input_list "
     exit 1
