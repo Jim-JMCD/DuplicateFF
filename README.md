@@ -2,7 +2,7 @@
 ## Duplicate File Finder
 ### A small Linux app that will search supplied directory(s) and compare files using sha256 checksum and produces reports on duplicate and unique files.      
 
-This repository only contains X86-64 excutable.  For the ARM version go to [DuplicateFF_for_ARM_aarch64](https://github.com/Jim-JMCD/DuplicateFF_for_ARM_aarch64)
+#### This repository only contains X86-64 excutable.  For the ARM version go to [DuplicateFF_for_ARM_aarch64](https://github.com/Jim-JMCD/DuplicateFF_for_ARM_aarch64)
 
 *duplicateFF* created from the bash script [Duplicate_FF](https://github.com/Jim-JMCD/Duplicate-File-Finder) (private Github repository) using shc. 
 
