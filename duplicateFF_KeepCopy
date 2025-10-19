@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-# $1 is the inputlist duplicate_files2_* (Note it _files2_)
+# $1 is the inputlist duplicate_FILES2_* (Note it must be  _FILES2_)
 # $2 is the destination directory
 # This script moves all the files listed in the third column of $1 CSV file to $2 the destination directory.
 
