@@ -7,11 +7,10 @@
 *duplicateFF* created from the bash script [Duplicate_FF](https://github.com/Jim-JMCD/Duplicate-File-Finder) (private Github repository) using shc. 
 
 ### Dependency
-This requires a bash environment to run. 
+This requires a Linux bash environment to run. Will run in Microsoft WSL2, duplicateFF will not run in MSYS2, Gitbash and Cygwin environmants
 An exceutable created from the *shc* utility always requires bash. More : [Github shc](https://github.com/neurobin/shc)   
                                                                               
 ### Notes
-Tested with MSYS2 and Gitbash shells.  It should work on Cygwin (MSYS2 and Gitbash are Cygwin derivates). 
 
 To move or remove duplicate files there are some suggestions in [How to delete duplicate files](https://github.com/Jim-JMCD/DuplicateFF/blob/main/How%20to%20delete%20duplicate%20files.md) using the **_duplicateFF_KeepCopy_** and **_duplicateFF_RemoveALL_** scripts in this repository.
 
