@@ -31,7 +31,7 @@ duplicateFF -f 'filter' -d 'source directory'
 Inputs of 'filter' 'source directory' 'output directory' should have single or double quotes otherwise any names with white space will not be processed.
 
 
-**-f** Optional case insensitive filter, filter the list files by part or the whole name of a file. 
+**-f** Optional case insensitive filter, filter the source by part or the whole name of a file. This option can only be used once.
 
 **-s** One or many directories can be entered each must start with -s.  
 
@@ -44,12 +44,12 @@ Setting maximum file size is optional, default is 20 GiB.  Ignoring large files 
 **-g or -G** gigabytes (GiB)
     
 _Additional Notes_
-* Output directory is created in the directory from which the script is run.
+* Default output directory, will be is created in the directory from which the script is run.
 * Temporary files are created in the directory from which the script is run - all removed or moved on scipt termination
 * The 'filter' and 'source directory' require single or double quotes for spaces in the filter and directory input.
-* If filtered by 'rar' that will pick both the word 'LIBRARY' and suffix '.rar'
-* Full file names can be used, but it only reports on contents using checksum.  
-* Only the first instances of -f used, the rest ignored.
+* Filtering example : **_-f 'rar'_** that will pick both the word 'LIBRARY' and suffix '.rar'.  They will be ignored
+*  Only the first instances of -f used, the rest are ignored.
+* Files with identical names and have differeing checksums are considered different files. File contents determines if they are copies.   
 * The app is designed to be thorough, not designed for speed.
 * Windows file systems occasionally produce some odd stuff that cannot be processed when mounted on Linux.
 
@@ -66,7 +66,9 @@ CSV Columns
 4. file size in KiB
 ------------------------------------
 
-__../duplicate_FILES2_yymmdd-hhmm.csv__  Format – Every row is as unique sha256 value with file size and all files of the same shar256 value. If more files match the checksum they are added as columns in <file> <directory> pairs i.e. repeats of columns 5 and 6.  
+__../duplicate_FILES2_yymmdd-hhmm.csv__  Format – Every row is as unique sha256 value with file size and all files of the same shar256 value. 
+
+If more files match the checksum they are added as columns in <file> <directory> pairs i.e. repeats of columns 5 and 6.  
 
 CSV Columns
 1. sha256 checksum
