@@ -13,14 +13,14 @@ This method moves one file of a duplicate set to a user defined directory then t
 
 Step 1.  This will move files to designated directory. Run bash script 
 ~~~
-duplicateFF_KeepCopy \<input_list\> \<destination_directory\>
+duplicateFF_KeepCopy <input_list> <destination_directory>
 ~~~
 * **_input_list_** = a duplicate_FILES2_yymmdd-hhmm.csv file.  NOTE: It must be a **FILES2** file.
-* If the destination_directory does not exist it will be created.
+* If the destination_directory does not exist it will be created in present working directory ($PWD)
 
 Step 2. This will remove all files than have not been moved.  Run bash script
 ~~~
-duplicateFF_RemoveALL \<input_list\>
+duplicateFF_RemoveALL <input_list>
 ~~~  
 * **_input_list_** = a duplicate_FILES1_yymmdd-hhmm.csv file  NOTE: It must be a **FILES1** file.
 * This script attempts to removes ALL duplicate files. If any file does not have a copy that was moved in **_Step 1_** all copies will be removed.
