@@ -7,7 +7,7 @@
 *duplicateFF* created from the bash script [Duplicate_FF](https://github.com/Jim-JMCD/Duplicate-File-Finder) (private Github repository) using shc. 
 
 ### Dependency
-This requires a Linux bash environment to run. Will run in Microsoft WSL2, duplicateFF will not run in MSYS2, Gitbash and Cygwin environmants
+This requires a Linux bash environment to run. Will run in Microsoft WSL2(Linux), duplicateFF will not run in MSYS2, Gitbash and Cygwin environmants
 An exceutable created from the *shc* utility always requires bash. More : [Github shc](https://github.com/neurobin/shc)   
                                                                               
 ### Notes
