@@ -1,11 +1,11 @@
 ## duplicateFF -  Duplicate File Finder
 #### A Bash that will search supplied directory(s) and compare files using sha256 checksum and produces CSV reports on duplicate and unique files that can be used with spreadsheets or scripts.      
 ___________________________________________________________________
-#### _Changes in progress_
-* Excecutables created using the shc utilitiy being replaced by the original script. 
-* Adding a summary reporting option (-r)
+#### _Recent changes_
+* Excecutables created using the shc utilitiy have been replaced by the original script. 
+* Added a summary reporting option (-r)
 * Improved efficiency
-* Fixing search level (-l) option bug 
+* Fixed search level (-l) option bug 
 ___________________________________________________________________
 ### Inputs
 
