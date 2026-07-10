@@ -58,10 +58,10 @@ Inputs of 'filter' 'source directory' 'output directory' should have single or d
 _Manditory Options_
 
 **-l Search level** 
-* -l 0 Process the current directory and all subdirectories.
-* -l 1 Process only the current directory
-* -l 2 Process the current directory and one level below.
-* -l n Process n levels deep in directory structure, includes current directory.
+* -l 0 Process the supplied directories and all subdirectories.
+* -l 1 Process only the top level of the supplied directories
+* -l 2 Process the supplied directories and one level below.
+* -l n Process n levels deep in directory structure, includes the top level of the supplied directories.
 
 **-s Directories to process** 
 
