@@ -89,16 +89,16 @@ Maximum file sixe filter is optional, default is 20 GiB.  Ignoring large files c
     
 _Additional Notes_
 * Default output directory, will be is created in the directory from which the script is run.
-* Temporary files are created in the directory from which the script is run - all removed or moved on scipt termination.
+* Temporary files are created in the directory from which the script is run, all are removed or moved on scipt termination.
 * All hidden (dot) files are ignored, hidden directories are processed.
 * The 'filter' and 'source directory' require single or double quotes for spaces in the filter and directory input.
-* Filtering example : **_-f 'rar'_** that will pick both the word 'LIBRARY' and suffix '.rar'.  They will be ignored
-*  Only the last instances of -f filter is used, the rest are ignored.
-*  Only the last instances of file size filter is used, the rest are ignored.  
-* Files with identical names and have differeing checksums are considered different files. File contents determines if they are copies.
+* Filtering is case insensitive, example : **_-f 'rar'_** that will pick both the word 'LIBRARY' and suffix '.rar'.
+* Only the last instances of -f filter is used, the rest are ignored.
+* Only the last instances of file size filter is used, the rest are ignored.  
+* Files with identical names and have different checksums are considered different files. File contents determines if they are copies.
 * Files with different contents and the same SHA256 have known to occur.
-* Empty files have the SHA256 checksums. Moving and deleting these could cause application problems, they could be 'flag' files. 
-* The app is designed to be thorough, not designed for speed.
+* Moving and deleting empty files could cause application problems, they could be 'flag' files. 
+* The script is designed to be thorough, not designed for speed.
 * Windows file systems occasionally produce some odd stuff that cannot be processed when mounted on Linux.
 
 ### OUTPUTS 
