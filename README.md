@@ -1,21 +1,19 @@
-## duplicateFF -  Duplicate File Finder
-#### A small Linux app that will search supplied directory(s) and compare files using sha256 checksum and produces CSV reports on duplicate and unique files that can be used with spreadsheets or scripts.      
-
-#### This repository only contains X86-64 excutable.  For the ARM version go to [duplicateFF_for_ARM_aarch64](https://github.com/Jim-JMCD/DuplicateFF_for_ARM_aarch64)
-
-*duplicateFF* created from the bash script [duplicate_FF](https://github.com/Jim-JMCD/duplicate-File-Finder) (private Github repository) using shc. 
-
-### Dependency
-This requires a Linux bash environment to run. Will run in Microsoft WSL2(Linux), duplicateFF will not run in MSYS2, Gitbash and Cygwin environmants
-An exceutable created from the *shc* utility always requires bash. More : [Github shc](https://github.com/neurobin/shc)   
-                                                                              
+## duplicateFF -  Duplicate File Finder (under renovation, come back after 10PM 11 July 2026) 
+#### A Bash that will search supplied directory(s) and compare files using sha256 checksum and produces CSV reports on duplicate and unique files that can be used with spreadsheets or scripts.      
+___________________________________________________________________
+#### _Changes in progress_
+* Excecutables created using the shc utilitiy being replaced by the original script. 
+* Adding a summary reporting option (-r)
+* Improved efficiency
+* Fixing search level (-l) option bug 
+___________________________________________________________________
 ### Inputs
 
 * It requires a least one directory to search many directories can be compared.  
-* Searches are selectable:
-  * The current directory and all subdirectories **(-l 0)**.
-  * Only the current directory **(-l 1)**.
-  * The current and any subdirectory level that is required **(-l _n_)**
+* Searches are selectable, the **-l** option is manditary:
+  * Search all directories and subdirectories **(-l 0)**.
+  * Search only the top level of the directories **(-l 1)**.
+  * Search top level and subdirectories to a depth level that is required **(-l _n_)**
 * Files names and maximum file sizes can be used as filters to narrow searches and save time.
 * Linux hidden files are ignored, hidden directories are processed.  
 
@@ -28,7 +26,9 @@ The following reports are generated in CSV format for easy processing with sprea
 * All files processed.
 * All unique files found.
 * A basic log.
-In thje reports every file checked is accompanied by a SHA256 checksum. 
+In the reports every file checked is accompanied by a SHA256 checksum.
+
+If no duplicates are found or the reporting option **(-r)** is used, only the all files processed report (**all_files_\<date-time\>.csv**) and the basic log (**log_\<date-time\>.txt**) are produced.  
 
 ### Notes
 
@@ -39,7 +39,7 @@ __Foreign Language Characters:__ If Microsoft Excel is the default application f
 __________________________________________________________________________________________
 
 ### Usage 
-#### duplicateFF -l \<search level\> [-f \<filter\>] [-k|K|m|M|g|G \<size\>] -s \<source directory\> ... -s \<source directory\>  
+#### duplicateFF -r -l \<search level\> [-f \<filter\>] [-k|K|m|M|g|G \<size\>] -s \<source directory\> ... -s \<source directory\>  
 
 1. Check all mp4 files that are smaller 300MB in Fred's downloads and ./video, all subdirectories will be processed 
 ~~~
@@ -54,20 +54,28 @@ Note: **-s .** could be replaced with **-s $PWD** or the full path. The search f
 
 Inputs of 'filter' 'source directory' 'output directory' should have single or double quotes otherwise any names with spaces will not be processed.
 
-**-l Search level** 
+### Options 
+_Manditory Options_
 
+**-l Search level** 
 * -l 0 Process the current directory and all subdirectories.
 * -l 1 Process only the current directory
 * -l 2 Process the current directory and one level below.
 * -l n Process n levels deep in directory structure, includes current directory.
 
+**-s Directories to process** 
+
+One or many directories can be entered each must start with -s.
+
+_Optional Options_
+
+**-r Reporting**
+
+An optional paramater that records the total files processed and the total number of duplicatres to the log (log_<date-time>.txt).  No other reports are produced.
+
 **-f File name filter** 
 
 Optional case insensitive filter, filter the source by part or the whole name of a file. This option can only be used once.
-
-**-s Directories to process** 
-
-One or many directories can be entered each must start with -s.  
 
 **Maximum file size filter**
 
