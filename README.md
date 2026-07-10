@@ -1,4 +1,4 @@
-## duplicateFF -  Duplicate File Finder (under renovation, come back after 10PM 11 July 2026) 
+## duplicateFF -  Duplicate File Finder
 #### A Bash that will search supplied directory(s) and compare files using sha256 checksum and produces CSV reports on duplicate and unique files that can be used with spreadsheets or scripts.      
 ___________________________________________________________________
 #### _Changes in progress_
