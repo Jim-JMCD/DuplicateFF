@@ -69,7 +69,7 @@ One or many directories can be entered each must start with -s.
 
 _Optional Options_
 
-**-r Reporting**
+**-r Report number of duplicates**
 
 An optional paramater that records the total files processed and the total number of duplicatres to the log (log_<date-time>.txt).  No other reports are produced.
 
